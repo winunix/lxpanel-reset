@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -f /etc/skel/.config/lxqt/panel.conf ]; then
+	cp /etc/skel/.config/lxqt/panel.conf ~/.config/lxqt/panel.conf
+else
+	cp /usr/share/lxpanel-reset/panel.conf ~/.config/lxqt/panel.conf
+fi
+
+killall lxqt-panel
+lxqt-panel &
