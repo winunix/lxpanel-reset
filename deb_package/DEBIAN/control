@@ -1,11 +1,13 @@
-Package: lxpanel-reset
-Version: 0.0.1
-Installed-Size: 2
+Package: lxreset
+Version: 0.0.3
+Installed-Size: 3
 Maintainer: ailtonbsj <ailton.ifce@gmail.com>
 Section: utils
 Architecture: all
 Priority: optional
-Depends: lxqt-panel
+Depends: lxqt-panel | lxpanel
+Conflicts: lxpanel-reset
+Replaces: lxpanel-reset
 Homepage: https://ailtonbsj.github.io
-Description: Reset taskbar and panel of LXQt.
- This tool reset the files of LXQt Panel.
+Description: Some tools to reset LXQt configs.
+ This tool reset the files of LXQt.
