@@ -1,7 +1,14 @@
 #!/bin/bash
 
 killall lxqt-panel
+killall lxpanel
 killall pcmanfm-qt
+killall pcmanfm
+
 rm -rf ~/.config/pcmanfm-qt/
+rm -rf ~/.config/pcmanfm/
+
 cp -rf /etc/skel/. ~/
+
 killall lxqt-session
+killall lxsession
